@@ -103,7 +103,17 @@
 
 <div align="center">
 
-![](https://github-profile-trophy.vercel.app/?username=pavankumarvusa&theme=tokyonight&no-frame=true&no-bg=false&margin-w=4)
+![](https://github-trophies.devomb.com/?username=pavankumarvusa&theme=tokyonight&no-frame=true&no-bg=false&margin-w=4)
+
+</div>
+
+---
+
+## ✍️ Random Dev Quote
+
+<div align="center">
+
+![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight)
 
 </div>
 
