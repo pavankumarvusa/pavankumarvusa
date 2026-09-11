@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" preserveAspectRatio="none">
+  <defs>
+    <!-- ════ CINEMATIC GRADIENT — cycles through 8 color combos over 20s ════ -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%">
+        <animate attributeName="stop-color"
+          values="#0f0c29;#6a0572;#00b4d8;#e94560;#0f3460;#ff6b6b;#12c2e9;#302b63;#0f0c29"
+          dur="20s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%">
+        <animate attributeName="stop-color"
+          values="#302b63;#f64f59;#0077b6;#533483;#e94560;#feca57;#c471ed;#24243e;#302b63"
+          dur="20s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%">
+        <animate attributeName="stop-color"
+          values="#24243e;#c471ed;#90e0ef;#ff6b6b;#7928ca;#ee5a24;#f7797d;#0f0c29;#24243e"
+          dur="20s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <!-- ════ SECONDARY GRADIENT for shimmer overlay ════ -->
+    <linearGradient id="shimmer" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0)" />
+      <stop offset="50%" stop-color="rgba(255,255,255,0.04)" />
+      <stop offset="100%" stop-color="rgba(255,255,255,0)" />
+      <animateTransform attributeName="gradientTransform" type="translate" values="-1;1;-1" dur="6s" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <!-- ════ TEXT SHADOW for guaranteed contrast ════ -->
+    <filter id="shadow" x="-5%" y="-10%" width="110%" height="130%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="blur"/>
+      <feOffset in="blur" dx="0" dy="2" result="shifted"/>
+      <feFlood flood-color="#000000" flood-opacity="0.6" result="color"/>
+      <feComposite in="color" in2="shifted" operator="in" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- ════ GLOW for subtitle ════ -->
+    <filter id="glow" x="-5%" y="-10%" width="110%" height="130%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2" result="blur"/>
+      <feOffset in="blur" dx="0" dy="1" result="shifted"/>
+      <feFlood flood-color="#000000" flood-opacity="0.5" result="color"/>
+      <feComposite in="color" in2="shifted" operator="in" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- ════ BASE: animated gradient fill ════ -->
+  <rect width="1200" height="300" fill="url(#bg)"/>
+
+  <!-- ════ SHIMMER overlay ════ -->
+  <rect width="1200" height="300" fill="url(#shimmer)"/>
+
+  <!-- ════ WAVE LAYER 1 — slow deep wave ════ -->
+  <path fill="rgba(255,255,255,0.06)">
+    <animate attributeName="d" dur="8s" repeatCount="indefinite"
+      values="M0,195 C100,170 250,220 400,200 C550,180 700,225 850,195 C950,175 1100,215 1200,200 L1200,300 L0,300Z;
+              M0,215 C100,235 250,185 400,210 C550,230 700,185 850,215 C950,235 1100,195 1200,210 L1200,300 L0,300Z;
+              M0,195 C100,170 250,220 400,200 C550,180 700,225 850,195 C950,175 1100,215 1200,200 L1200,300 L0,300Z"/>
+  </path>
+
+  <!-- ════ WAVE LAYER 2 — medium wave ════ -->
+  <path fill="rgba(255,255,255,0.045)">
+    <animate attributeName="d" dur="6s" repeatCount="indefinite"
+      values="M0,235 C150,215 350,255 500,235 C650,215 850,250 1000,230 C1100,220 1200,240 1200,300 L0,300Z;
+              M0,225 C150,245 350,215 500,235 C650,255 850,220 1000,240 C1100,250 1200,225 1200,300 L0,300Z;
+              M0,235 C150,215 350,255 500,235 C650,215 850,250 1000,230 C1100,220 1200,240 1200,300 L0,300Z"/>
+  </path>
+
+  <!-- ════ WAVE LAYER 3 — fast shallow wave ════ -->
+  <path fill="rgba(255,255,255,0.03)">
+    <animate attributeName="d" dur="4s" repeatCount="indefinite"
+      values="M0,260 C200,248 450,272 650,258 C850,245 1050,268 1200,255 L1200,300 L0,300Z;
+              M0,255 C200,268 450,248 650,262 C850,272 1050,250 1200,262 L1200,300 L0,300Z;
+              M0,260 C200,248 450,272 650,258 C850,245 1050,268 1200,255 L1200,300 L0,300Z"/>
+  </path>
+
+  <!-- ════ BOTTOM EDGE wave ════ -->
+  <path fill="rgba(0,0,0,0.15)">
+    <animate attributeName="d" dur="5s" repeatCount="indefinite"
+      values="M0,280 C300,270 600,290 900,275 L1200,282 L1200,300 L0,300Z;
+              M0,275 C300,288 600,272 900,282 L1200,275 L1200,300 L0,300Z;
+              M0,280 C300,270 600,290 900,275 L1200,282 L1200,300 L0,300Z"/>
+  </path>
+
+  <!-- ════ MAIN TITLE ════ -->
+  <text x="600" y="105" text-anchor="middle"
+        font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif"
+        font-size="56" font-weight="700" letter-spacing="2"
+        fill="#FFFFFF" filter="url(#shadow)">
+    Pavan Kumar Vusa
+  </text>
+
+  <!-- ════ SUBTITLE ════ -->
+  <text x="600" y="152" text-anchor="middle"
+        font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif"
+        font-size="22" font-weight="400" letter-spacing="1"
+        fill="#FFFFFF" opacity="0.92" filter="url(#glow)">
+    Data Scientist  |  AI Engineer  |  NLP Specialist
+  </text>
+
+  <!-- ════ DECORATIVE SEPARATOR ════ -->
+  <rect x="430" y="170" width="340" height="1.5" rx="1" fill="#FFFFFF" opacity="0.25"/>
+
+  <!-- ════ TECH TAGLINE ════ -->
+  <text x="600" y="200" text-anchor="middle"
+        font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif"
+        font-size="14" font-weight="300" letter-spacing="3"
+        fill="#FFFFFF" opacity="0.65" filter="url(#glow)">
+    LLMs  ·  TRANSFORMERS  ·  RAG  ·  NLP  ·  GENERATIVE AI  ·  ML
+  </text>
+</svg>
