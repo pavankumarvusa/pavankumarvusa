@@ -1,18 +1,14 @@
 <div align="center">
 
-<!-- Animated Header GIF -->
-<img src="https://raw.githubusercontent.com/halfrost/halfrost/master/icons/header_.png" alt="Header" width="100%"/>
+<!-- ═══════════════ FLOWING WAVE HERO ═══════════════ -->
+<!-- Top wave: deep blue → violet → coral gradient with name overlay -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,10:1a1a2e,30:16213e,50:0f3460,70:533483,90:e94560,100:e94560&height=280&section=header&text=Pavan%20Kumar%20Vusa&fontSize=52&fontColor=FFFFFF&animation=fadeIn&fontAlignY=38&desc=Data%20Scientist%20%7C%20AI%20Engineer%20%7C%20NLP%20Specialist&descSize=22&descColor=E0E0FF&descAlignY=58" width="100%" alt="Hero Banner"/>
 
-<!-- Animated Wave -->
-<img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35">
-
-<!-- Typing SVG Animation -->
+<!-- Typing SVG — sits on clean background, no color clash -->
+<br/>
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=4000&pause=1000&color=3B82F6&center=true&vCenter=true&multiline=true&repeat=true&width=800&height=100&lines=Hi+%F0%9F%91%8B+I'm+Pavan+Kumar+Vusa;Data+Scientist+%7C+AI+Engineer+%7C+NLP+Specialist;Building+Intelligent+Systems+with+LLMs+%26+ML" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=1000&color=A78BFA&center=true&vCenter=true&repeat=true&width=700&height=45&lines=%F0%9F%A4%96+Building+Intelligent+Systems+with+LLMs;%F0%9F%94%A5+Transformers+%7C+RAG+%7C+NLP+%7C+GenAI;%F0%9F%9A%80+Turning+Data+into+Actionable+Intelligence" alt="Typing SVG" />
 </a>
-
-<!-- Animated Coding GIF -->
-<img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="400" alt="Coding Animation"/>
 
 </div>
 
@@ -126,6 +122,6 @@
 
 [![](https://komarev.com/ghpvc/?username=pavankumarvusa&icon=0&color=3B82F6&style=for-the-badge)](https://visitcount.itsvg.in)
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:e94560,30:533483,50:0f3460,70:16213e,90:1a1a2e,100:0D1117&height=120&section=footer" width="100%"/>
 
 </div>
