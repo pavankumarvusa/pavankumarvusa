@@ -1,10 +1,10 @@
 <div align="center">
 
-<!-- ═══════════════ FLOWING WAVE HERO ═══════════════ -->
-<!-- Top wave: deep blue → violet → coral gradient with name overlay -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,10:1a1a2e,30:16213e,50:0f3460,70:533483,90:e94560,100:e94560&height=280&section=header&text=Pavan%20Kumar%20Vusa&fontSize=52&fontColor=FFFFFF&animation=fadeIn&fontAlignY=38&desc=Data%20Scientist%20%7C%20AI%20Engineer%20%7C%20NLP%20Specialist&descSize=22&descColor=E0E0FF&descAlignY=58" width="100%" alt="Hero Banner"/>
+<!-- ═══════════════ 🎬 CINEMATIC WAVE HERO ═══════════════ -->
+<!-- color=timeGradient → generates a NEW gradient combo on EVERY page refresh -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=300&section=header&text=Pavan%20Kumar%20Vusa&fontSize=55&fontColor=FFFFFF&animation=twinkling&fontAlignY=35&desc=Data%20Scientist%20%7C%20AI%20Engineer%20%7C%20NLP%20Specialist&descSize=22&descColor=FFFFFF&descAlignY=55&stroke=000000&strokeWidth=1" width="100%" alt="Hero Banner"/>
 
-<!-- Typing SVG — sits on clean background, no color clash -->
+<!-- Typing SVG — cinematic taglines on clean background -->
 <br/>
 <a href="https://git.io/typing-svg">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=1000&color=A78BFA&center=true&vCenter=true&repeat=true&width=700&height=45&lines=%F0%9F%A4%96+Building+Intelligent+Systems+with+LLMs;%F0%9F%94%A5+Transformers+%7C+RAG+%7C+NLP+%7C+GenAI;%F0%9F%9A%80+Turning+Data+into+Actionable+Intelligence" alt="Typing SVG" />
@@ -122,6 +122,6 @@
 
 [![](https://komarev.com/ghpvc/?username=pavankumarvusa&icon=0&color=3B82F6&style=for-the-badge)](https://visitcount.itsvg.in)
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:e94560,30:533483,50:0f3460,70:16213e,90:1a1a2e,100:0D1117&height=120&section=footer" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=120&section=footer&reversal=true" width="100%"/>
 
 </div>
